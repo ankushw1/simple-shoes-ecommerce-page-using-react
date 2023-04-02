@@ -1,0 +1,33 @@
+.header {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+}
+
+.headercart {
+  display: flex;
+  align-items: center;
+}
+
+.headercart i {
+  margin-right: 2px;
+  font-size: 40px;
+  color: blue;
+}
+
+.headercart p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-left: -3px;
+}
+
+.form{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+}
