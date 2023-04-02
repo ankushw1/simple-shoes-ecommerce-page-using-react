@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-const Header = () => {
+const Header = ({cartCount}) => {
   return (
     <>
     <div className='header'>
@@ -9,7 +9,7 @@ const Header = () => {
       <h1>MaxShoes</h1>
       <div className='headercart'>
       <i className="fa-solid fa-cart-shopping"></i>
-      <p>7</p>
+      <p>{cartCount}</p>
       </div>
       </div>
     </>

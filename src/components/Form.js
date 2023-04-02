@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 
-const Form = () => {
+
+const Form = (props) => {
 
     const nameRef = useRef('')
     const descriptionRef = useRef('')
@@ -15,7 +16,7 @@ const Form = () => {
             inputPrice:priceRef.current.value
         }
 
-        console.log(data)
+        props.addProduct(data)
 
         event.target.reset()
 
@@ -33,8 +34,6 @@ const Form = () => {
         <input type="number" ref={priceRef} />
         
         <button>Add Product</button>
-
-
 
       </form>
     </>
